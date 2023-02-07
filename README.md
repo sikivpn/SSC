@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <h2 align="center">
 
-Autoscript SSH Websocket Multiport
+Autoscript SSH Websocket Multiport FREE!!!
 
   
 <h2 align="center"> ♦️Supported Linux Distribution♦️</h2>
