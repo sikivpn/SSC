@@ -1,6 +1,6 @@
 #!/bin/bash
 # By Sha Eccha
-# My Telegram : https://t.me/todfix667
+# My Telegram : https://t.me/sikivpn
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,31 +14,31 @@ LIGHT='\033[0;37m'
 # ==========================================
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/NevermoreSSH/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/sikivpn/SSC/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/todfix667"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/sikivpn"
 exit 0
 fi
 clear
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/NevermoreSSH/SSC/main/ssh"
+akbarvpn="raw.githubusercontent.com/sikivpn/SSC/main/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/xray"
+akbarvpnn="raw.githubusercontent.com/sikivpn/SSC/main/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/trojango"
+akbarvpnnn="raw.githubusercontent.com/sikivpn/SSC/main/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/stunnel5"
+akbarvpnnnn="raw.githubusercontent.com/sikivpn/SSC/main/stunnel5"
 
 #Link Hosting Kalian Untuk Websocket
-akbarvpnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/websocket"
+akbarvpnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/websocket"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
@@ -305,7 +305,7 @@ cat > /etc/systemd/system/stunnel5.service << END
 [Unit]
 Description=Stunnel5 Service
 Documentation=https://stunnel.org
-Documentation=https://github.com/todfix667
+Documentation=https://github.com/sikivpn
 After=syslog.target network-online.target
 
 [Service]
