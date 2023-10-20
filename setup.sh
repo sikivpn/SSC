@@ -7,7 +7,7 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 		echo "OpenVZ is not supported"
 		exit 1
 fi
-# My Telegram : https://t.me/todfix667
+# My Telegram : https://t.me/sikivpn
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -20,37 +20,37 @@ CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/NevermoreSSH/SSC/main/ssh"
+akbarvpn="raw.githubusercontent.com/sikivpn/SSC/main/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/sstp"
+akbarvpnn="raw.githubusercontent.com/sikivpn/SSC/main/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/ssr"
+akbarvpnnn="raw.githubusercontent.com/sikivpn/SSC/main/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/sikivpn/SSC/main/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/ohp"
 # link Hosting update
-akbarvpnnnnnnnnnnn="raw.githubusercontent.com/NevermoreSSH/SSC/main/update"
+akbarvpnnnnnnnnnnn="raw.githubusercontent.com/sikivpn/SSC/main/update"
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/NevermoreSSH/SSC/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/sikivpn/SSC/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/todfix667"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/sikivpn"
 exit 0
 fi
 clear
@@ -77,7 +77,7 @@ wget https://${akbarvpnnnnnnnn}/set-br.sh && chmod +x set-br.sh && ./set-br.sh
 # Update Menu
 wget https://${akbarvpnnnnnnnnnnn}/getupdate.sh && chmod +x getupdate.sh && ./getupdate.sh
 # sslh fix
-wget https://raw.githubusercontent.com/NevermoreSSH/SSC/main/sslh-fix/sslh-fix.sh && chmod +x sslh-fix.sh && ./sslh-fix.sh
+wget https://raw.githubusercontent.com/sikivpn/SSC/main/sslh-fix/sslh-fix.sh && chmod +x sslh-fix.sh && ./sslh-fix.sh
 #restart service
 restart
 
@@ -95,7 +95,7 @@ rm -f /root/newhost.sh
 cat <<EOF> /etc/systemd/system/autosett.service
 [Unit]
 Description=autosetting
-Documentation=https://t.me/todfix667
+Documentation=https://t.me/sikivpn
 
 [Service]
 Type=oneshot
@@ -114,7 +114,7 @@ echo "1.2" > /home/ver
 echo " "
 echo "Installation has been completed!!"
 echo " "
-echo "=================================-Sha Eccha Project-===========================" | tee -a log-install.txt
+echo "=================================-Sha Eccha SSC-===========================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
