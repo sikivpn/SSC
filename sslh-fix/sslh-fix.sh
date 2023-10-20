@@ -1,5 +1,5 @@
 #!/bin/bash
-# My Telegram : https://t.me/todfix667
+# My Telegram : https://t.me/sikivpn
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -14,13 +14,13 @@ LIGHT='\033[0;37m'
 #Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/NevermoreSSH/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/sikivpn/SSC/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/todfix667"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/sikivpn"
 exit 0
 fi
 clear
@@ -31,7 +31,7 @@ rm -r sslh-fix-reboot
 rm -rf sslh-fix-reboot
 rm sslh-fix-reboot
 # Download File
-wget -O sslh-fix-reboot "https://raw.githubusercontent.com/NevermoreSSH/SSC/main/sslh-fix/sslh-fix-reboot.sh"
+wget -O sslh-fix-reboot "https://raw.githubusercontent.com/sikivpn/SSC/main/sslh-fix/sslh-fix-reboot.sh"
 #change Permission
 chmod +x sslh-fix-reboot
 # change directory
