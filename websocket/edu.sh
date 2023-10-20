@@ -1,6 +1,6 @@
 #!/bin/bash
 # Proxy For Edukasi & Imclass
-# My Telegram : https://t.me/todfix667
+# My Telegram : https://t.me/sikivpn
 # ==========================================
 # Color
 RED='\033[0;31m'
@@ -15,29 +15,29 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$(curl https://raw.githubusercontent.com/NevermoreSSH/project/main/ipvps.txt | grep $MYIP | awk '{print $3}')
+IZIN=$(curl https://raw.githubusercontent.com/sikivpn/SSC/main/ipvps.txt | grep $MYIP | awk '{print $3}')
 if [ $MYIP = $MYIP ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
 echo -e "${NC}${RED}Permission Denied!${NC}";
 echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/todfix667"
+echo -e "${NC}${LIGHT}Telegram : https://t.me/sikivpn"
 exit 0
 fi
 clear
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/NevermoreSSH/SSC/main/websocket"
+akbarvpn="raw.githubusercontent.com/sikivpn/SSC/main/websocket"
 
 # Getting Proxy Template
 wget -q -O /usr/local/bin/ws-nontls https://${akbarvpn}/websocket.py
-#cp /root/myproject/websocket/websocket.py /usr/local/bin/ws-nontls
+#cp /root/mySSC/websocket/websocket.py /usr/local/bin/ws-nontls
 chmod +x /usr/local/bin/ws-nontls
 
 # Installing Service
 cat > /etc/systemd/system/ws-nontls.service << END
 [Unit]
 Description=Python Proxy Mod By Sha Eccha
-Documentation=https://t.me/todfix667
+Documentation=https://t.me/sikivpn
 After=network.target nss-lookup.target
 
 [Service]
@@ -59,7 +59,7 @@ systemctl restart ws-nontls
 
 # Getting Proxy Template
 wget -q -O /usr/local/bin/ws-ovpn https://${akbarvpn}/ws-ovpn.py
-#cp /root/myproject/websocket/ws-ovpn.py /usr/local/bin/ws-ovpn
+#cp /root/mySSC/websocket/ws-ovpn.py /usr/local/bin/ws-ovpn
 chmod +x /usr/local/bin/ws-ovpn
 
 # Installing Service
